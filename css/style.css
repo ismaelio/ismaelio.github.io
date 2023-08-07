@@ -18,19 +18,27 @@ p {
     margin-top: 20px;
 }
 
+/* 
+img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+*/
+
 a img {
     max-height: 120px;
-    max-width: 50%;
+    max-width: 300px;
+    transition: transform .2s;
 }
 
 a img:hover {
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
 .contatodiv {
     margin-bottom: 10px;
     max-height: 150px;
-    width:100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -98,13 +106,14 @@ object {
         display: block;
         color: #070700;
         background: ghostwhite;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .topnav a {
         float: left;
         background: ghostwhite;
         color: #070700;
+        font-size: 2em;
     }
 
     .webtitulo {

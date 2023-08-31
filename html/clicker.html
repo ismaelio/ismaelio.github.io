@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogo Clicker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <h1 class="webtitulo">Ismael</h1>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html">Home</a>
+        <a href="jogos.html" class="active">Jogos</a>
+        <a href="aplicativos.html">Aplicativos</a>
+        <a href="musica.html">Música</a>
+        <a href="fotos.html">Fotos</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobremim.html">Sobre mim</a>
+        <a href="javascript:void(0);" class="icon" onclick="menu()">
+            <i>&#8801</i>
+        </a>
+    </div>
+    <article class="pclicker">
+        <h3 class="hclicker"><span id="click">0</span> cliques</h3>
+        </br></br>
+        <button class="clicar" onclick="clique()" id="demo">Clicar</button>
+        <button class="clicar" onclick="reset()">Reiniciar</button>
+    </article>
+    <script>
+        var click = 0;
+        var c = document.getElementById("click");
+        function clique() {
+            click += 1;
+            c.innerHTML = click;
+        }
+        function reset() {
+            click = 0;
+            c.innerHTML = click;
+        }
+    </script>
+</body>
+
+</html>
